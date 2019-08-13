@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to the Docs &#8212; Jewl 4.2.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-the-docs">
+<h1>Welcome to the Docs<a class="headerlink" href="#welcome-to-the-docs" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">preamble</span></code>
+Here lies the documentation for the programming language jewl</p>
+</div>
+<div class="section" id="basic-syntax">
+<h1>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="print">
+<h2>print<a class="headerlink" href="#print" title="Permalink to this headline">¶</a></h2>
+<p>This is how you print to the console</p>
+<p>Print only prints the text, no newline characters</p>
+<p>The syntax is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="s2">&quot;text &quot;</span><span class="p">;</span>
+<span class="nb">print</span> <span class="s2">&quot;more text&quot;</span><span class="p">;</span>
+
+<span class="n">output</span><span class="p">:</span>
+<span class="n">text</span> <span class="n">more</span> <span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="println">
+<h2>println<a class="headerlink" href="#println" title="Permalink to this headline">¶</a></h2>
+<p>This does the the same as print but adds a newline character at the end</p>
+<p>The syntax is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">println</span> <span class="s2">&quot;text&quot;</span><span class="p">;</span>
+<span class="n">println</span> <span class="s2">&quot;more text&quot;</span><span class="p">;</span>
+
+<span class="n">output</span><span class="p">:</span>
+<span class="n">text</span>
+<span class="n">more</span> <span class="n">text</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="integers">
+<h2>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">¶</a></h2>
+<p>print and println can both print integers (but not in strings currently)
+That syntax is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">println</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nb">print</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">output</span><span class="p">:</span>
+<span class="mi">1</span>
+<span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="expressions">
+<h2>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h2>
+<p>You can also print expressions</p>
+<p>That syntax is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">println</span> <span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+<span class="nb">print</span> <span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="p">;</span>
+<span class="n">output</span><span class="p">:</span>
+<span class="mi">2</span>
+<span class="mi">2</span>
+</pre></div>
+</div>
+<p>Currently Addition, Subtraction, Multiplication, and Division are supported up to Double whole integers (eg: 0-99)</p>
+</div>
+<div class="section" id="if-statements">
+<h2>If Statements<a class="headerlink" href="#if-statements" title="Permalink to this headline">¶</a></h2>
+<p>Jewl also supports If Statements</p>
+<p>Their syntax being:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="o">==</span><span class="n">num3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">code</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Theoretically any type of Jewl code could be in the if statement but I have only tested printing</p>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>Variables are also supported</p>
+<dl class="simple">
+<dt>Their Syntax being::</dt><dd><p>//For Integers
+Int varname=0;
+//For Strings
+Str varname=”test”;</p>
+</dd>
+</dl>
+<p>The syntax for printing variables is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>println ${varname};
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Jewl</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Pyrerune.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
